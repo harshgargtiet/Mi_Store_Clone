@@ -10,7 +10,7 @@ import Heading from "./components/Heading.js";
 import StarProducts from "./components/StarProducts.js";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js";
-
+import ProductReviews from "./components/ProductReviews.js"
 
 
 function App() {
@@ -40,7 +40,9 @@ function App() {
       
        <Route path="/mobileAccessories" element={ <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}  />} />
        {/* new version of react-router dom thats why changed the route syntax from exact path  */}
-       </Routes >  
+       </Routes > 
+       <Heading text="PRODUCT REVIEWS"/>
+       <ProductReviews productReviews={data.productReviews} />
     </Router>
 
   )
